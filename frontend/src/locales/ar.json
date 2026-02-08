@@ -1,0 +1,90 @@
+{
+    "nav": {
+        "dashboard": "لوحة القيادة",
+        "market": "السوق",
+        "portfolio": "المحفظة",
+        "alerts": "التنبيهات",
+        "settings": "الإعدادات"
+    },
+    "dashboard": {
+        "title": "نظرة عامة على السوق",
+        "topGainers": "الأكثر ارتفاعاً",
+        "topLosers": "الأكثر انخفاضاً",
+        "highVolume": "حجم تداول مرتفع",
+        "recentAnomalies": "الشذوذات الأخيرة",
+        "viewAll": "عرض الكل"
+    },
+    "stock": {
+        "price": "السعر",
+        "change": "التغيير",
+        "volume": "الحجم",
+        "prediction": "توقعات 7 أيام",
+        "agentInsight": "تحليل الذكاء الاصطناعي",
+        "recommendation": "التوصية",
+        "confidence": "الثقة",
+        "reasoning": "التفسير",
+        "sentiment": "معنويات السوق",
+        "news": "آخر الأخبار",
+        "detailSub": "التحليل وتوقعات الذكاء الاصطناعي",
+        "chartTitle": "تاريخ الأسعار والتوقعات",
+        "historical": "تاريخي",
+        "predicted": "متوقع",
+        "score": "النتيجة",
+        "whyThisRecommendation": "لماذا هذه التوصية؟",
+        "buy": "شراء",
+        "sell": "بيع",
+        "hold": "احتفاظ"
+    },
+    "portfolio": {
+        "title": "محفظتي",
+        "holdings": "الحيازات",
+        "transactions": "سجل المعاملات",
+        "performance": "مقاييس الأداء",
+        "totalValue": "القيمة الإجمالية",
+        "realizedPL": "الربح/الخسارة المحققة",
+        "unrealizedPL": "الربح/الخسارة غير المحققة",
+        "roi": "العائد على الاستثمار",
+        "sharpeRatio": "نسبة شارب"
+    },
+    "alerts": {
+        "title": "التنبيهات والشذوذات",
+        "description": "الكشف في الوقت الفعلي عن المخالفات السوقية والمخاطر المحتملة.",
+        "noAnomalies": "لم يتم اكتشاف أي شذوذات نشطة. يبدو السوق مستقراً.",
+        "severity": "الخطورة",
+        "viewDetails": "عرض التفاصيل"
+    },
+    "settings": {
+        "title": "الإعدادات",
+        "userProfile": "الملف الشخصي",
+        "riskTolerance": "تحمل المخاطر",
+        "conservative": "محافظ",
+        "moderate": "معتدل",
+        "aggressive": "عدواني",
+        "aiDetect": "دع الذكاء الاصطناعي يكتشف ملفي الشخصي",
+        "aiDetectDesc": "أجب عن بعض الأسئلة لتحديد استراتيجيتك المثالية.",
+        "dataManagement": "إدارة البيانات",
+        "reloadData": "إعادة تحميل بيانات السوق",
+        "reloadDataDesc": "فحص دليل البيانات للملفات الجديدة.",
+        "resetPortfolio": "إعادة تعيين المحفظة",
+        "resetPortfolioDesc": "حذف جميع المعاملات والحيازات. لا رجعة فيه.",
+        "appearance": "المظهر",
+        "darkMode": "الوضع الداكن",
+        "darkModeDesc": "تفعيل السمة الداكنة للوحة القيادة.",
+        "language": "اللغة",
+        "languageDesc": "اختر لغتك المفضلة."
+    },
+    "trade": {
+        "buy": "شراء",
+        "sell": "بيع",
+        "quantity": "الكمية",
+        "execute": "تنفيذ الصفقة",
+        "success": "تم تنفيذ الصفقة بنجاح"
+    },
+    "common": {
+        "loading": "جاري التحميل...",
+        "error": "حدث خطأ",
+        "close": "إغلاق",
+        "save": "حفظ",
+        "cancel": "إلغاء"
+    }
+}

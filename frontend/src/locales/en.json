@@ -1,0 +1,90 @@
+{
+    "nav": {
+        "dashboard": "Dashboard",
+        "market": "Market",
+        "portfolio": "Portfolio",
+        "alerts": "Alerts",
+        "settings": "Settings"
+    },
+    "dashboard": {
+        "title": "Market Overview",
+        "topGainers": "Top Gainers",
+        "topLosers": "Top Losers",
+        "highVolume": "High Volume",
+        "recentAnomalies": "Recent Anomalies",
+        "viewAll": "View All"
+    },
+    "stock": {
+        "price": "Price",
+        "change": "Change",
+        "volume": "Volume",
+        "prediction": "7-Day Forecast",
+        "agentInsight": "Agent Insight",
+        "recommendation": "Recommendation",
+        "confidence": "Confidence",
+        "reasoning": "Reasoning",
+        "sentiment": "Market Sentiment",
+        "news": "Latest Headlines",
+        "detailSub": "Analysis & AI Predictions",
+        "chartTitle": "Price History & Forecast",
+        "historical": "Historical",
+        "predicted": "Predicted",
+        "score": "Score",
+        "whyThisRecommendation": "Why this recommendation?",
+        "buy": "BUY",
+        "sell": "SELL",
+        "hold": "HOLD"
+    },
+    "portfolio": {
+        "title": "My Portfolio",
+        "holdings": "Holdings",
+        "transactions": "Transaction History",
+        "performance": "Performance Metrics",
+        "totalValue": "Total Value",
+        "realizedPL": "Realized P/L",
+        "unrealizedPL": "Unrealized P/L",
+        "roi": "ROI",
+        "sharpeRatio": "Sharpe Ratio"
+    },
+    "alerts": {
+        "title": "Alerts & Anomalies",
+        "description": "Real-time detection of market irregularities and potential risks.",
+        "noAnomalies": "No active anomalies detected. The market appears stable.",
+        "severity": "Severity",
+        "viewDetails": "View Stock Details"
+    },
+    "settings": {
+        "title": "Settings",
+        "userProfile": "User Profile",
+        "riskTolerance": "Risk Tolerance",
+        "conservative": "Conservative",
+        "moderate": "Moderate",
+        "aggressive": "Aggressive",
+        "aiDetect": "Let AI Detect My Profile",
+        "aiDetectDesc": "Answer a few questions to let the system determine your ideal strategy.",
+        "dataManagement": "Data Management",
+        "reloadData": "Reload Market Data",
+        "reloadDataDesc": "Re-scan the data directory for new CSV/TXT files.",
+        "resetPortfolio": "Reset Portfolio",
+        "resetPortfolioDesc": "Delete all transactions and holdings. Irreversible.",
+        "appearance": "Appearance",
+        "darkMode": "Dark Mode",
+        "darkModeDesc": "Enable dark theme for the dashboard.",
+        "language": "Language",
+        "languageDesc": "Select your preferred language."
+    },
+    "trade": {
+        "buy": "Buy",
+        "sell": "Sell",
+        "quantity": "Quantity",
+        "execute": "Execute Trade",
+        "success": "Trade executed successfully"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "close": "Close",
+        "save": "Save",
+        "cancel": "Cancel"
+    }
+}

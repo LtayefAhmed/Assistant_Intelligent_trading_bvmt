@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+textblob
+beautifulsoup4
+requests
+python-multipart

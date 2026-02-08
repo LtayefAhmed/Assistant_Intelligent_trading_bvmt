@@ -1,0 +1,90 @@
+{
+    "nav": {
+        "dashboard": "Tableau de bord",
+        "market": "Marché",
+        "portfolio": "Portefeuille",
+        "alerts": "Alertes",
+        "settings": "Paramètres"
+    },
+    "dashboard": {
+        "title": "Aperçu du marché",
+        "topGainers": "Meilleures hausses",
+        "topLosers": "Meilleures baisses",
+        "highVolume": "Volume élevé",
+        "recentAnomalies": "Anomalies récentes",
+        "viewAll": "Voir tout"
+    },
+    "stock": {
+        "price": "Prix",
+        "change": "Variation",
+        "volume": "Volume",
+        "prediction": "Prévision 7 jours",
+        "agentInsight": "Analyse IA",
+        "recommendation": "Recommandation",
+        "confidence": "Confiance",
+        "reasoning": "Raisonnement",
+        "sentiment": "Sentiment du marché",
+        "news": "Dernières actualités",
+        "detailSub": "Analyse et prévisions par IA",
+        "chartTitle": "Historique des prix et prévisions",
+        "historical": "Historique",
+        "predicted": "Prévision",
+        "score": "Score",
+        "whyThisRecommendation": "Pourquoi cette recommandation ?",
+        "buy": "ACHETER",
+        "sell": "VENDRE",
+        "hold": "CONSERVER"
+    },
+    "portfolio": {
+        "title": "Mon portefeuille",
+        "holdings": "Positions",
+        "transactions": "Historique des transactions",
+        "performance": "Métriques de performance",
+        "totalValue": "Valeur totale",
+        "realizedPL": "P&L réalisé",
+        "unrealizedPL": "P&L non réalisé",
+        "roi": "ROI",
+        "sharpeRatio": "Ratio de Sharpe"
+    },
+    "alerts": {
+        "title": "Alertes et anomalies",
+        "description": "Détection en temps réel des irrégularités du marché et des risques potentiels.",
+        "noAnomalies": "Aucune anomalie active détectée. Le marché semble stable.",
+        "severity": "Gravité",
+        "viewDetails": "Voir les détails"
+    },
+    "settings": {
+        "title": "Paramètres",
+        "userProfile": "Profil utilisateur",
+        "riskTolerance": "Tolérance au risque",
+        "conservative": "Conservateur",
+        "moderate": "Modéré",
+        "aggressive": "Agressif",
+        "aiDetect": "Laisser l'IA détecter mon profil",
+        "aiDetectDesc": "Répondez à quelques questions pour que le système détermine votre stratégie idéale.",
+        "dataManagement": "Gestion des données",
+        "reloadData": "Recharger les données",
+        "reloadDataDesc": "Analyser le répertoire de données pour de nouveaux fichiers CSV/TXT.",
+        "resetPortfolio": "Réinitialiser le portefeuille",
+        "resetPortfolioDesc": "Supprimer toutes les transactions et positions. Irréversible.",
+        "appearance": "Apparence",
+        "darkMode": "Mode sombre",
+        "darkModeDesc": "Activer le thème sombre pour le tableau de bord.",
+        "language": "Langue",
+        "languageDesc": "Sélectionnez votre langue préférée."
+    },
+    "trade": {
+        "buy": "Acheter",
+        "sell": "Vendre",
+        "quantity": "Quantité",
+        "execute": "Exécuter la transaction",
+        "success": "Transaction exécutée avec succès"
+    },
+    "common": {
+        "loading": "Chargement...",
+        "error": "Une erreur s'est produite",
+        "close": "Fermer",
+        "save": "Enregistrer",
+        "cancel": "Annuler"
+    }
+}
