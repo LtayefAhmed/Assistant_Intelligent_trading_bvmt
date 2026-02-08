@@ -12,24 +12,36 @@ const Portfolio = () => {
     const [suggestions, setSuggestions] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [testAmount, setTestAmount] = useState('');
+    const [adviceLoading, setAdviceLoading] = useState(false);
+    const [showAdvice, setShowAdvice] = useState(false);
 
     const fetchPortfolioData = async () => {
         try {
-            const [pRes, sRes] = await Promise.all([
-                fetch('/api/portfolio'),
-                fetch(`/api/portfolio/optimization?profile=${localStorage.getItem('userProfile') || 'Moderate'}`)
-            ]);
-
+            const pRes = await fetch('/api/portfolio');
             if (pRes.ok) setPortfolio(await pRes.json());
-            if (sRes.ok) {
-                const sData = await sRes.json();
-                setSuggestions(sData.suggestions || []);
-            }
         } catch (err) {
             console.error("Portfolio fetch error:", err);
             setError(err.message);
         } finally {
             setLoading(false);
+        }
+    };
+
+    const getAIAdvice = async () => {
+        setAdviceLoading(true);
+        setShowAdvice(true);
+        try {
+            const profile = localStorage.getItem('userProfile') || 'Moderate';
+            const sRes = await fetch(`/api/portfolio/optimization?profile=${profile}${testAmount ? `&amount=${testAmount}` : ''}`);
+            if (sRes.ok) {
+                const sData = await sRes.json();
+                setSuggestions(sData.suggestions || []);
+            }
+        } catch (err) {
+            console.error("Advice fetch error:", err);
+        } finally {
+            setAdviceLoading(false);
         }
     };
 
@@ -194,12 +206,33 @@ const Portfolio = () => {
                 <Card className="border-indigo-100 dark:border-indigo-950 bg-gradient-to-br from-white to-indigo-50/30 dark:from-gray-800 dark:to-indigo-950/10 shadow-md">
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-indigo-900 dark:text-indigo-400">
-                            <Activity size={20} /> {t('portfolio.optimization') || "AI Rebalancing Advisor"}
+                            <Activity size={20} /> {t('portfolio.optimizationTitle') || "AI Strategy Advisor"}
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
+                        {/* Interactive Amount Input */}
+                        <div className="mb-4 flex gap-2">
+                            <input
+                                type="number"
+                                placeholder="Enter amount to invest (e.g. 5000)"
+                                value={testAmount}
+                                onChange={(e) => setTestAmount(e.target.value)}
+                                className="flex-1 p-2 text-sm rounded-lg border border-indigo-200 dark:bg-gray-900 dark:border-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            />
+                            <button
+                                onClick={getAIAdvice}
+                                disabled={adviceLoading}
+                                className="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 transition-all shadow-sm disabled:opacity-50"
+                            >
+                                {adviceLoading ? "..." : "Get Advice"}
+                            </button>
+                        </div>
                         <div className="space-y-3">
-                            {suggestions.length > 0 ? (
+                            {adviceLoading ? (
+                                <div className="flex items-center justify-center p-4">
+                                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-indigo-600"></div>
+                                </div>
+                            ) : showAdvice && suggestions.length > 0 ? (
                                 suggestions.map((s, i) => (
                                     <div key={i} className="flex items-start gap-3 p-3 bg-white/60 dark:bg-gray-900/40 rounded-lg border border-indigo-50 dark:border-indigo-900/50 text-sm">
                                         <div className="mt-1 p-1 bg-indigo-100 dark:bg-indigo-900 rounded-full text-indigo-600 dark:text-indigo-400">
@@ -208,8 +241,10 @@ const Portfolio = () => {
                                         <span className="text-gray-700 dark:text-gray-300 leading-relaxed font-medium">{s}</span>
                                     </div>
                                 ))
+                            ) : showAdvice ? (
+                                <p className="text-sm text-gray-500 italic p-2 text-center">No specific optimizations found for this amount.</p>
                             ) : (
-                                <p className="text-sm text-gray-500 italic">Analyzing portfolio for optimizations...</p>
+                                <p className="text-sm text-gray-400 italic p-2 text-center opacity-70">Enter an amount and click "Get Advice" to see AI recommendations.</p>
                             )}
                         </div>
                     </CardContent>

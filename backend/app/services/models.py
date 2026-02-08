@@ -59,8 +59,9 @@ class PricePredictor:
             return {"forecast": [], "metrics": {}}
             
         future_indices = np.arange(self.last_date_index + 1, self.last_date_index + days + 1).reshape(-1, 1)
-        price_predictions = self.price_model.predict(future_indices)
-        vol_predictions = self.volume_model.predict(future_indices)
+        future_df = pd.DataFrame(future_indices, columns=['DayIndex'])
+        price_predictions = self.price_model.predict(future_df)
+        vol_predictions = self.volume_model.predict(future_df)
         
         forecast = []
         for i in range(len(price_predictions)):

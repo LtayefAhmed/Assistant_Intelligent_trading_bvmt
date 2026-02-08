@@ -44,7 +44,9 @@
         "realizedPL": "P&L réalisé",
         "unrealizedPL": "P&L non réalisé",
         "roi": "ROI",
-        "sharpeRatio": "Ratio de Sharpe"
+        "sharpeRatio": "Ratio de Sharpe",
+        "optimizationTitle": "Conseiller en Stratégie IA",
+        "optimization": "Optimisation du Portefeuille"
     },
     "alerts": {
         "title": "Alertes et anomalies",

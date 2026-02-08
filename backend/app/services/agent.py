@@ -30,24 +30,27 @@ class DecisionAgent:
             "histogram": hist.iloc[-1]
         }
 
-    def get_optimization_suggestions(self, portfolio: Dict[str, Any], user_profile: str) -> List[str]:
+    def get_optimization_suggestions(self, portfolio: Dict[str, Any], user_profile: str, amount: float = None) -> List[str]:
         """Generates portfolio optimization suggestions based on risk profile."""
         suggestions = []
         holdings = portfolio.get("holdings", {})
         total_value = sum(h.get("quantity", 0) * h.get("avg_cost", 0) for h in holdings.values())
-        cash = portfolio.get("cash", 10000.0)
+        cash = amount if amount is not None else portfolio.get("cash", 10000.0)
         
-        # 1. Cash Balance Logic & 5000 TND Case Study
-        if not holdings and cash >= 5000:
+        # 1. Cash Balance Logic & Dynamic Investment Case Study
+        if not holdings and cash > 1000:
+            cash_fmt = f"{cash:,.0f}"
             if user_profile == "Aggressive":
-                suggestions.append(f"Ready for your first 5,000 TND investment? Our AI suggests a split into high-growth stocks like BIAT and SAH to capitalize on current bullish trends.")
+                suggestions.append(f"Ready to put your {cash_fmt} TND to work? Our AI suggests a split into high-growth stocks like BIAT and SAH to capitalize on current bullish trends.")
             elif user_profile == "Conservative":
-                suggestions.append(f"With 5,000 TND available, we recommend allocating 70% to stable blue-chip stocks (e.g., SFBT) and keeping 30% in cash for safety.")
+                suggestions.append(f"With {cash_fmt} TND available, we recommend allocating 70% to stable blue-chip stocks (e.g., SFBT) and keeping 30% in cash for safety.")
             else:
-                suggestions.append(f"Balanced Recommendation: Use your 5,000 TND to build a diversified base with 3-4 stocks across different sectors.")
+                suggestions.append(f"Balanced Strategy: Use your {cash_fmt} TND to build a diversified base with 3-4 stocks across different sectors.")
 
         elif user_profile == "Conservative" and cash / (total_value + cash + 1) < 0.3:
-
+            suggestions.append("Increase cash reserves to 30% for improved safety.")
+        elif user_profile == "Aggressive" and cash / (total_value + cash + 1) > 0.1:
+            suggestions.append("Your cash level is high for an aggressive profile. Consider reinvesting.")
         # 2. Diversification
         if len(holdings) < 3 and total_value > 0:
             suggestions.append("Your portfolio is concentrated. Add 2-3 more stocks to diversify risk.")

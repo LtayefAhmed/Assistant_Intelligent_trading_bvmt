@@ -272,7 +272,7 @@ async def get_portfolio():
     }
 
 @router.get("/portfolio/optimization")
-async def get_portfolio_optimization(profile: str = "Moderate"):
+async def get_portfolio_optimization(profile: str = "Moderate", amount: float = None):
     """Get AI suggestions for portfolio optimization."""
     data = portfolio_service.get_portfolio()
     enriched_holdings = {}
@@ -287,12 +287,13 @@ async def get_portfolio_optimization(profile: str = "Moderate"):
                      "current_price": row['Close']
                  }
     
+    cash_for_optimization = amount if amount is not None else data.get("cash", 10000.0)
     portfolio_state = {
         "holdings": enriched_holdings,
-        "cash": data.get("cash", 10000.0)
+        "cash": cash_for_optimization
     }
     
-    suggestions = decision_agent.get_optimization_suggestions(portfolio_state, profile)
+    suggestions = decision_agent.get_optimization_suggestions(portfolio_state, profile, amount)
     return {"suggestions": suggestions}
 
 @router.post("/portfolio/transaction")

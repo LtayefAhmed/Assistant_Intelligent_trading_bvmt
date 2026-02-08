@@ -44,7 +44,9 @@
         "realizedPL": "Realized P/L",
         "unrealizedPL": "Unrealized P/L",
         "roi": "ROI",
-        "sharpeRatio": "Sharpe Ratio"
+        "sharpeRatio": "Sharpe Ratio",
+        "optimizationTitle": "AI Strategy Advisor",
+        "optimization": "Portfolio Optimization"
     },
     "alerts": {
         "title": "Alerts & Anomalies",

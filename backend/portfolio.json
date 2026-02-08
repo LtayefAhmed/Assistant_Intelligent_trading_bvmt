@@ -1,26 +1,5 @@
 {
-    "holdings": {
-        "TNI7FVNGCJ77": {
-            "quantity": 2,
-            "total_cost": 132.02000000000004,
-            "avg_cost": 66.01000000000002
-        },
-        "TN66JFM5A518": {
-            "quantity": 6,
-            "total_cost": 42.0,
-            "avg_cost": 7.0
-        },
-        "TN6KZZZEJ5N2": {
-            "quantity": 1,
-            "total_cost": 100.0,
-            "avg_cost": 100.0
-        },
-        "TN0007620065": {
-            "quantity": 4,
-            "total_cost": 7.48,
-            "avg_cost": 1.87
-        }
-    },
+    "holdings": {},
     "transactions": [
         {
             "type": "BUY",
@@ -293,6 +272,131 @@
             "price": 1.87,
             "date": "2026-02-08T06:36:03.973024",
             "total": 5.61
+        },
+        {
+            "type": "SELL",
+            "symbol": "TNI7FVNGCJ77",
+            "quantity": 1,
+            "price": 66.01,
+            "date": "2026-02-08T07:16:15.577739",
+            "total": 66.01,
+            "realized_pl": -1.4210854715202004e-14
+        },
+        {
+            "type": "SELL",
+            "symbol": "TNI7FVNGCJ77",
+            "quantity": 1,
+            "price": 66.01,
+            "date": "2026-02-08T07:16:17.410930",
+            "total": 66.01,
+            "realized_pl": -1.4210854715202004e-14
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN66JFM5A518",
+            "quantity": 1,
+            "price": 7.0,
+            "date": "2026-02-08T07:16:27.255967",
+            "total": 7.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN66JFM5A518",
+            "quantity": 1,
+            "price": 7.0,
+            "date": "2026-02-08T07:16:29.450792",
+            "total": 7.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN66JFM5A518",
+            "quantity": 1,
+            "price": 7.0,
+            "date": "2026-02-08T07:16:31.863408",
+            "total": 7.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN66JFM5A518",
+            "quantity": 1,
+            "price": 7.0,
+            "date": "2026-02-08T07:16:33.655962",
+            "total": 7.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN66JFM5A518",
+            "quantity": 1,
+            "price": 7.0,
+            "date": "2026-02-08T07:16:36.552936",
+            "total": 7.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN66JFM5A518",
+            "quantity": 1,
+            "price": 7.0,
+            "date": "2026-02-08T07:16:38.418691",
+            "total": 7.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN6KZZZEJ5N2",
+            "quantity": 1,
+            "price": 100.0,
+            "date": "2026-02-08T07:16:58.536608",
+            "total": 100.0,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN0007620065",
+            "quantity": 1,
+            "price": 1.87,
+            "date": "2026-02-08T07:17:10.361007",
+            "total": 1.87,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN0007620065",
+            "quantity": 3,
+            "price": 1.87,
+            "date": "2026-02-08T07:17:18.737080",
+            "total": 5.61,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "BUY",
+            "symbol": "TN0007620065",
+            "quantity": 6,
+            "price": 1.87,
+            "date": "2026-02-08T07:34:41.404970",
+            "total": 11.22
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN0007620065",
+            "quantity": 4,
+            "price": 1.87,
+            "date": "2026-02-08T07:35:01.836844",
+            "total": 7.48,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN0007620065",
+            "quantity": 2,
+            "price": 1.87,
+            "date": "2026-02-08T07:35:13.357513",
+            "total": 3.74,
+            "realized_pl": 0.0
         }
     ]
 }
