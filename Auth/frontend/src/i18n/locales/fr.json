@@ -1,0 +1,376 @@
+{
+  "apiErrors": {
+    "401": "Non autorisé - Session expirée",
+    "403": "Interdit - Permissions insuffisantes",
+    "404": "Ressource non trouvée",
+    "500": "Erreur serveur - Veuillez réessayer plus tard",
+    "default": "Erreur inconnue - Veuillez contacter l'administration"
+  },
+  "notifications": {
+    "tokenRefresh": {
+      "success": "Session rafraîchie avec succès",
+      "error": "Échec du rafraîchissement de la session"
+    }
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Numéro de téléphone",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "createAccount": "Créer un compte",
+    "continue": "Continuer",
+    "back": "Retour",
+    "discoverFeatures": "Découvrir Nos Fonctionnalités"
+  },
+  "roles": {
+    "chooseRole": "Choisissez votre rôle",
+    "jobseeker": "Chercheur d'emploi",
+    "recruiter": "Recruteur",
+    "jobseekerDesc": "Trouvez votre emploi de rêve et postulez",
+    "recruiterDesc": "Publiez des offres et trouvez des talents",
+    "registration": "Inscription"
+  },
+  "forms": {
+    "required": "est requis",
+    "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+    "invalidPhone": "Veuillez entrer un numéro de téléphone valide à 8 chiffres",
+    "passwordLength": "Le mot de passe doit contenir au moins 6 caractères",
+    "cinLength": "Le CIN doit contenir au moins 6 caractères",
+    "uploadResume": "Téléchargez votre CV (PDF, DOC, DOCX)",
+    "uploadLogo": "Télécharger le logo de l'entreprise",
+    "companyName": "Nom de l'entreprise",
+    "position": "Votre poste",
+    "industry": "Secteur d'activité",
+    "website": "Site web de l'entreprise (optionnel)",
+    "cin": "CIN"
+  },
+  "validation": {
+    "emailRequired": "L'e-mail est requis",
+    "passwordRequired": "Le mot de passe est requis",
+    "firstNameRequired": "Le prénom est requis",
+    "lastNameRequired": "Le nom est requis",
+    "phoneRequired": "Le numéro de téléphone est requis",
+    "cinRequired": "Le CIN est requis",
+    "companyRequired": "Le nom de l'entreprise est requis",
+    "positionRequired": "Votre poste est requis",
+    "industryRequired": "Le secteur d'activité est requis",
+    "resumeRequired": "Le CV est requis"
+  },
+  "app": {
+    "title": "CareerHub",
+    "subtitle": "Trouvez votre emploi de rêve ou le candidat parfait",
+    "tagline": "Votre compagnon de carrière alimenté par l'IA"
+  },
+  "buttons": {
+    "signingIn": "Connexion en cours...",
+    "registering": "Inscription en cours...",
+    "createAccount": "Créer un compte "
+  },
+  "legal": {
+    "terms": "Conditions",
+    "privacyPolicy": "Politique de confidentialité",
+    "agreement": "En vous inscrivant, vous acceptez nos"
+  },
+  "footer": {
+    "tagline": "Votre compagnon de carrière alimenté par l'IA. Transformez votre recherche d'emploi avec des outils intelligents et des conseils personnalisés.",
+    "newsletter": {
+      "title": "Restez Informé",
+      "placeholder": "Entrez votre email",
+      "button": "S'abonner",
+      "disclaimer": "Pas de spam. Désabonnez-vous à tout moment."
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "jobSearch": "Recherche d'Emploi",
+      "cvBuilder": "Créateur de CV",
+      "aiInterview": "Entretien IA",
+      "community": "Communauté",
+      "courses": "Cours"
+    },
+    "company": {
+      "title": "Entreprise",
+      "about": "À Propos",
+      "careers": "Carrières",
+      "press": "Presse",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Centre d'Aide",
+      "contact": "Contact",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation"
+    },
+    "contact": {
+      "location": "New York, NY"
+    },
+    "links": {
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation",
+      "cookies": "Cookies"
+    },
+    "copyright": "Tous droits réservés."
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "backToHome": "Retour à l'accueil",
+    "lastUpdated": "Dernière mise à jour",
+    "headerDescription": "Nous nous engageons à protéger votre vie privée et à garantir la transparence dans la manière dont nous traitons vos données.",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Bienvenue sur CareerBoost. Nous respectons votre vie privée et nous engageons à protéger vos données personnelles. Cette politique de confidentialité vous informera sur la manière dont nous traitons vos données personnelles lorsque vous visitez notre plateforme et vous parlera de vos droits en matière de protection des données et de la manière dont la loi vous protège."
+      },
+      "dataCollection": {
+        "title": "Données que nous collectons",
+        "personalData": "Données Personnelles",
+        "identityData": "Données d'identité : Nom, nom d'utilisateur, date de naissance, genre",
+        "contactData": "Données de contact : Adresse e-mail, numéros de téléphone, adresse",
+        "profileData": "Données de profil : Nom d'utilisateur et mot de passe, centres d'intérêt, préférences",
+        "careerData": "Données de carrière : CV, expérience professionnelle, formation, compétences",
+        "technicalData": "Données techniques : Adresse IP, type de navigateur, paramètres de fuseau horaire"
+      },
+      "dataUsage": {
+        "title": "Comment nous utilisons vos données",
+        "serviceDelivery": {
+          "title": "Prestation de services",
+          "description": "Pour fournir et maintenir nos services de carrière, y compris la mise en relation d'emplois et l'analyse de CV."
+        },
+        "personalization": {
+          "title": "Personnalisation",
+          "description": "Pour personnaliser votre expérience et fournir des recommandations d'emploi pertinentes."
+        },
+        "communication": {
+          "title": "Communication",
+          "description": "Pour envoyer des mises à jour importantes concernant votre compte et nos services."
+        },
+        "analytics": {
+          "title": "Analytique",
+          "description": "Pour améliorer notre plateforme et développer de nouvelles fonctionnalités basées sur le comportement des utilisateurs."
+        }
+      },
+      "dataSharing": {
+        "title": "Partage des données",
+        "intro": "Nous ne vendons pas vos données personnelles. Nous pouvons partager vos informations avec :",
+        "employers": "Employeurs",
+        "employersDesc": "Lorsque vous postulez à des emplois via notre plateforme",
+        "serviceProviders": "Prestataires de services",
+        "serviceProvidersDesc": "Entreprises qui nous aident à faire fonctionner notre plateforme",
+        "legalRequirements": "Exigences légales",
+        "legalRequirementsDesc": "Lorsque requis par la loi ou pour protéger nos droits",
+        "businessTransfers": "Transferts d'entreprise",
+        "businessTransfersDesc": "Dans le cadre de toute fusion ou acquisition"
+      },
+      "dataSecurity": {
+        "title": "Sécurité des données",
+        "content": "Nous avons mis en place des mesures de sécurité appropriées pour empêcher la perte accidentelle, l'utilisation ou l'accès non autorisé à vos données personnelles. Nous utilisons le chiffrement, des serveurs sécurisés et des évaluations de sécurité régulières pour protéger vos informations."
+      },
+      "yourRights": {
+        "title": "Vos droits",
+        "access": "Accès",
+        "accessDesc": "Demander des copies de vos données personnelles",
+        "correction": "Rectification",
+        "correctionDesc": "Demander la correction de données inexactes",
+        "erasure": "Effacement",
+        "erasureDesc": "Demander la suppression de vos données personnelles",
+        "objection": "Opposition",
+        "objectionDesc": "S'opposer au traitement de vos données personnelles",
+        "portability": "Portabilité",
+        "portabilityDesc": "Demander le transfert de vos données à une autre organisation"
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "intro": "Si vous avez des questions concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter :",
+        "email": "E-mail",
+        "address": "Adresse",
+        "phone": "Téléphone"
+      },
+      "changes": {
+        "title": "Modifications de cette politique",
+        "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date de 'Dernière mise à jour'."
+      }
+    }
+  },
+  "onboarding": {
+    "skip": "Passer",
+    "back": "Retour",
+    "continue": "Continuer",
+    "getStarted": "Commencer",
+    "swipeHint": "Glissez à gauche/droite ou utilisez les boutons pour naviguer",
+    "swipeHintMobile": "Glissez pour naviguer →",
+    "swipeBack": "Glisser en arrière",
+    "swipeNext": "Glisser suivant",
+    "steps": {
+      "aiCVEnhancer": "Amélioration de CV par IA",
+      "aiCVEnhancerDesc": "Transformez votre CV avec notre analyseur intelligent. Obtenez des suggestions personnalisées pour vous démarquer auprès des employeurs et réussir les systèmes ATS.",
+      "jobMatcher": "Matching Intelligent d'Emplois",
+      "jobMatcherDesc": "Découvrez des opportunités d'emploi parfaites adaptées à vos compétences et aspirations. Notre IA analyse votre CV pour vous proposer des postes idéaux.",
+      "aiInterview": "Coach d'Entretien IA",
+      "aiInterviewDesc": "Entraînez-vous avec notre simulateur d'entretien intelligent. Recevez des retours en temps réel sur vos réponses, style de communication et langage corporel.",
+      "careerCompanion": "Votre Compagnon de Carrière",
+      "careerCompanionDesc": "Rejoignez une communauté de professionnels et obtenez des conseils de carrière personnalisés. Votre voyage vers le succès commence ici.",
+      "readyStart": "Prêt à Booster Votre Carrière?",
+      "readyStartDesc": "Vous êtes prêt ! Commencez votre voyage vers l'excellence professionnelle avec nos outils alimentés par l'IA et le soutien communautaire.",
+      "tradingAssistant": "Assistant de Trading Intelligent",
+      "tradingAssistantDesc": "Notre IA analyse les marchés 24/7 pour vous fournir des recommandations personnalisées basées sur votre profil de risque et vos objectifs d'investissement.",
+      "pricePrediction": "Prédictions de Prix Avancées",
+      "pricePredictionDesc": "Utilisez nos modèles de machine learning pour anticiper les mouvements des valeurs BVMT avec une précision inégalée sur le marché tunisien.",
+      "anomalyDetection": "Détection d'Anomalies en Temps Réel",
+      "anomalyDetectionDesc": "Soyez alerté des manipulations de marché, volumes suspects et comportements anormaux pour protéger vos investissements.",
+      "portfolioManager": "Gestion Intelligente de Portefeuille",
+      "portfolioManagerDesc": "Optimisez votre allocation d'actifs avec nos algorithmes d'IA qui tiennent compte du risque, de la liquidité et des objectifs de rendement.",
+      "regulatoryCompliance": "Conformité Réglementaire CMF",
+      "regulatoryComplianceDesc": "Opérez en toute sécurité avec une plateforme conforme aux normes du Conseil du Marché Financier tunisien."
+    },
+    "tags": {
+      "aiCVEnhancerTag1": "Optimisé ATS",
+      "aiCVEnhancerTag2": "Analyse IA",
+      "aiCVEnhancerTag3": "Modèles Professionnels",
+      "jobMatcherTag1": "Matching Intelligent",
+      "jobMatcherTag2": "Emplois Personnalisés",
+      "jobMatcherTag3": "Score de Compatibilité",
+      "aiInterviewTag1": "Feedback en Temps Réel",
+      "aiInterviewTag2": "Simulations d'Entretien",
+      "aiInterviewTag3": "Coach IA",
+      "careerCompanionTag1": "Communauté d'Experts",
+      "careerCompanionTag2": "Conseils Carrière",
+      "careerCompanionTag3": "Réseautage",
+      "readyStartTag1": "Alimenté par l'IA",
+      "readyStartTag2": "Croissance Carrière",
+      "readyStartTag3": "Prêt pour le Succès",
+      "intelligentTrading": "Trading Intelligent",
+      "marketAnalysis": "Analyse Marché",
+      "realTimeData": "Données Temps Réel",
+      "aiForecasts": "Prévisions IA",
+      "technicalAnalysis": "Analyse Technique",
+      "marketTrends": "Tendances Marché",
+      "marketSurveillance": "Surveillance Marché",
+      "fraudPrevention": "Prévention Fraude",
+      "riskManagement": "Gestion Risque",
+      "assetAllocation": "Allocation Actifs",
+      "riskOptimization": "Optimisation Risque",
+      "performanceTracking": "Suivi Performance",
+      "cmfCompliant": "Conforme CMF",
+      "auditTrail": "Traçabilité",
+      "transparentReporting": "Rapports Transparents"
+    }
+  },
+  "splash": {
+    "ariaLabel": "L'application est en cours de chargement",
+    "logoAlt": "Logo CareerBoost",
+    "progressLabel": "Progression du chargement",
+    "loading": "Chargement...",
+    "status": {
+      "initializing": "Initialisation...",
+      "loading": "Chargement des ressources...",
+      "almostReady": "Presque prêt...",
+      "finalizing": "Finalisation..."
+    }
+  },
+  "install": {
+    "ios": {
+      "title": "Installer l'Application",
+      "description": "Pour installer cette application sur votre iPhone/iPad :",
+      "step1": "Appuyez sur le bouton Partager dans Safari",
+      "step2": "Sélectionnez Ajouter à l'écran d'accueil",
+      "step3": "Confirmez en appuyant sur Ajouter"
+    },
+    "android": {
+      "title": "Ajouter à l'Écran d'Accueil",
+      "description": "Installez notre application pour la meilleure expérience et un accès rapide depuis votre écran d'accueil."
+    },
+    "buttons": {
+      "install": "Installer",
+      "cancel": "Annuler",
+      "close": "Fermer"
+    }
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "description": "Oups ! Il semble que la page que vous recherchez a été déplacée, supprimée ou n'existe pas.",
+    "buttons": {
+      "home": "Retour à l'accueil",
+      "back": "Retour"
+    },
+    "help": {
+      "title": "Besoin d'aide ?",
+      "checkUrl": "Vérifiez l'URL",
+      "contactSupport": "Contactez le support"
+    }
+  },
+  "loading": {
+    "title": "Préparation de votre expérience...",
+    "ariaLabel": "Chargement du contenu"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue",
+    "menu": "Menu Principal",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "quickStats": "Statistiques Rapides",
+    "profileCompletion": "Profil Complété",
+    "jobsApplied": "Emplois Postulés",
+    "interviews": "Entretiens",
+    "enhanceCV": "Améliorer CV",
+    "enhanceCVDesc": "Optimisez votre CV avec l'IA",
+    "jobMatcher": "Job Matcher",
+    "jobMatcherDesc": "Trouvez votre emploi idéal",
+    "interviewAI": "Entretien Vidéo IA",
+    "interviewAIDesc": "Pratiquez avec des entretiens IA",
+    "uploadCV": "Télécharger Votre CV",
+    "uploadCVDesc": "Téléchargez votre CV actuel pour analyse et amélioration par IA",
+    "uploadFile": "Télécharger Fichier",
+    "aiAnalysis": "Analyse IA",
+    "aiAnalysisDesc": "Obtenez des suggestions personnalisées pour améliorer votre CV",
+    "analyzeNow": "Analyser Maintenant",
+    "findJobs": "Trouvez Votre Emploi Rêvé",
+    "findJobsDesc": "Découvrez des emplois qui correspondent à vos compétences",
+    "browseJobs": "Parcourir les Emplois",
+    "setPreferences": "Définir Préférences",
+    "practiceInterview": "Entraînement Entretien",
+    "practiceInterviewDesc": "Préparez-vous aux vrais entretiens avec notre plateforme vidéo IA",
+    "startPractice": "Commencer l'Entraînement",
+    "viewHistory": "Voir l'Historique",
+    "online": "En ligne",
+    "viewProfile": "Voir le profil",
+    "mainMenu": "Menu Principal",
+    "quickAccess": "Accès Rapide",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "settings": "Paramètres",
+    "profileViews": "Vues du profil",
+    "language": "Langue",
+    "theme": "Thème",
+    "more": "Plus"
+  },
+  "giscus": {
+    "title": "Discussions Communautaires",
+    "subtitle": "Propulsé par GitHub Discussions",
+    "comments": "Commentaires",
+    "about": "À propos",
+    "guidelines": "Règles",
+    "poweredBy": "Propulsé par GitHub",
+    "communityDriven": "Communauté",
+    "howItWorks": "Comment ça marche",
+    "githubRequired": "Compte GitHub Requis",
+    "publicDiscussions": "Discussions Publiques",
+    "reactions": "Réactions & Engagement",
+    "beRespectful": "Soyez Respectueux",
+    "stayOnTopic": "Restez dans le Sujet",
+    "noSpam": "Pas de Spam",
+    "constructiveFeedback": "Retour Constructif",
+    "reportIssue": "Signaler un Problème",
+    "joinDiscussion": "Rejoindre la Discussion",
+    "allDiscussions": "Toutes les Discussions",
+    "startDiscussion": "Commencer une Discussion"
+  }
+}
