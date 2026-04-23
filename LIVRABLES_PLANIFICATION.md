@@ -27,32 +27,32 @@ Concevoir un assistant de trading intelligent (IA) dédié à la Bourse des Vale
 La structure de découpage du projet (OTP) :
 
 ```mermaid
-wbs
-  * Assistant Intelligent BVMT
-    * 1. Management de Projet
-      * 1.1 Cahier des charges
-      * 1.2 Planification (Gantt, PERT)
-      * 1.3 Réunions et Suivi
-    * 2. Conception
-      * 2.1 Architecture Système
-      * 2.2 Maquettes UI/UX
-      * 2.3 Modélisation des données
-    * 3. Développement Data & ML
-      * 3.1 Ingestion des données BVMT
-      * 3.2 Modèles de prédiction des prix
-      * 3.3 Moteur d'analyse des sentiments
-    * 4. Développement Backend (API)
-      * 4.1 Endpoints de marché
-      * 4.2 Module Paper Trading
-      * 4.3 Authentification et Sécurité
-    * 5. Développement Frontend
-      * 5.1 Dashboard Temps Réel
-      * 5.2 Composants Graphiques
-      * 5.3 Intégration API
-    * 6. Tests et Déploiement
-      * 6.1 Tests Unitaires/Intégration
-      * 6.2 Recette Globale
-      * 6.3 Mise en production
+mindmap
+  root((Assistant Intelligent BVMT))
+    1 Management de Projet
+      1.1 Cahier des charges
+      1.2 Planification Gantt et PERT
+      1.3 Reunions et Suivi
+    2 Conception
+      2.1 Architecture Systeme
+      2.2 Maquettes UI UX
+      2.3 Modelisation des donnees
+    3 Developpement Data et ML
+      3.1 Ingestion des donnees BVMT
+      3.2 Modeles de prediction des prix
+      3.3 Moteur analyse des sentiments
+    4 Developpement Backend API
+      4.1 Endpoints de marche
+      4.2 Module Paper Trading
+      4.3 Authentification et Securite
+    5 Developpement Frontend
+      5.1 Dashboard Temps Reel
+      5.2 Composants Graphiques
+      5.3 Integration API
+    6 Tests et Deploiement
+      6.1 Tests Unitaires Integration
+      6.2 Recette Globale
+      6.3 Mise en production
 ```
 
 ---
@@ -91,28 +91,28 @@ gantt
     axisFormat  %d/%m
     
     section 1. Management
-    Planification initiale       :a1, 2026-04-24, 3d
-    Suivi de projet              :a2, after a1, 39d
+    Planification initiale       :a1, 2026-03-09, 4d
+    Suivi de projet              :a2, after a1, 38d
     
     section 2. Conception
-    Architecture et UI           :b1, 2026-04-27, 4d
+    Architecture et UI           :b1, 2026-03-13, 5d
     
     section 3. Data & ML
-    Ingestion données BVMT       :c1, 2026-05-01, 5d
+    Ingestion données BVMT       :c1, 2026-03-18, 5d
     Développement modèles ML     :c2, after c1, 7d
     
     section 4. Backend
-    Création API FastAPI         :d1, 2026-05-08, 6d
+    Création API FastAPI         :d1, 2026-03-30, 6d
     Agent de décision            :d2, after d1, 5d
     
     section 5. Frontend
-    Mise en place React          :e1, 2026-05-01, 4d
+    Mise en place React          :e1, 2026-03-18, 4d
     Dashboard & Graphiques       :e2, after e1, 7d
     
     section 6. Intégration & Prod
-    Intégration API <-> UI       :f1, 2026-05-18, 5d
-    Tests Globaux                :f2, after f1, 4d
-    Déploiement                  :f3, after f2, 2d
+    Intégration API <-> UI       :f1, 2026-04-10, 5d
+    Tests Globaux                :f2, after f1, 3d
+    Déploiement                  :f3, after f2, 3d
 ```
 
 ---
@@ -124,12 +124,12 @@ Attribution des rôles et responsabilités :
 
 | Tâches / Rôles | Chef de Projet | Lead Tech (Backend/IA) | Développeur Frontend | Client / Sponsor |
 | :--- | :---: | :---: | :---: | :---: |
-| Définir le cahier des charges | **A / R** | C | C | **C / A** |
-| Choix de l'architecture | A | **R** | C | I |
-| Développer le moteur ML | I | **R** | I | I |
-| Créer l'API Backend | I | **R** | I | I |
-| Développer les Vues React | I | C | **R** | I |
-| Intégration des composants | I | **R** | **R** | I |
+| Définir le cahier des charges | **R** | C | C | **A** |
+| Choix de l'architecture | **A** | **R** | C | I |
+| Développer le moteur ML | **A** | **R** | I | I |
+| Créer l'API Backend | **A** | **R** | C | I |
+| Développer les Vues React | **A** | C | **R** | I |
+| Intégration des composants | **A** | **R** | **R** | I |
 | Validation et Tests finaux | **R** | C | C | **A** |
 
 ---
@@ -157,5 +157,8 @@ Le **PMP** est le document cadre qui régit l'exécution du projet.
 3. **Gestion des risques majeurs** :
    * *Qualité des données BVMT* (Risque: Modéré) : Données parfois incomplètes. -> Action : Mise en place de scripts de nettoyage avancés (Pandas).
    * *Performance de l'IA (Précision)* (Risque: Élevé) : Les prédictions ne sont pas assez précises. -> Action : Commencer par la régression linéaire pour avoir une baseline, puis itérer si besoin.
+   * *Fiabilité de l'infrastructure* (Risque: Modéré) : Lenteur de l'application ou surcharge du serveur en production. -> Action : Utiliser l'asynchrone de FastAPI et faire des tests de charge (locust).
+   * *Sécurité et Authentification* (Risque: Critique) : Accès non autorisé au module de paper trading et manipulation des données. -> Action : Implémenter des tokens JWT sécurisés et chiffrer les mots de passe.
+   * *Changement de format des fichiers BVMT* (Risque: Modéré) : Les sources de données peuvent évoluer ou casser le système d'ingestion. -> Action : Créer des alertes pour le dataloader et une validation de schéma des données.
 4. **Assurance Qualité** : Mise en place de tests unitaires sur la logique de trading. Validation de l'UI/UX par des wireframes avant développement.
 5. **Gestion des Ressources** : Mobilisation d'un Data Scientist pour le back-end/ML et d'un développeur React pour le front-end. Utilisation des crédits Cloud gratuits/étudiants pour limiter le budget de l'infrastructure.
