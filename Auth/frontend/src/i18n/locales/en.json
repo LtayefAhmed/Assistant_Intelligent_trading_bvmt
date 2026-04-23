@@ -1,0 +1,367 @@
+{
+  "apiErrors": {
+    "401": "Unauthorized - Session expired",
+    "403": "Forbidden - Insufficient permissions",
+    "404": "Resource not found",
+    "500": "Server error - Please try again later",
+    "default": "Unknown error - Please contact administration"
+  },
+  "notifications": {
+    "tokenRefresh": {
+      "success": "Session refreshed successfully",
+      "error": "Failed to refresh session"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "email": "Email",
+    "forgotPasswordInstructions": "Enter your email address and we'll send you a link to reset your password.",
+    "resetPassword": "Reset Password",
+    "resetPasswordInstructions": "Enter your new password below.",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "resetEmailSent": "Reset email sent!",
+    "checkYourEmail": "Check your email for the reset link.",
+    "passwordResetSuccess": "Password reset successfully!",
+    "redirectingToLogin": "Redirecting to login...",
+    "invalidToken": "Invalid or expired token",
+    "requestNewLink": "Please request a new reset link.",
+    "backToLogin": "Back to login",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "createAccount": "Create Account",
+    "continue": "Continue",
+    "back": "Back",
+    "discoverFeatures": "Discover Our Features"
+  },
+  "roles": {
+    "chooseRole": "Choose Your Role",
+    "jobseeker": "Job Seeker",
+    "recruiter": "Recruiter",
+    "jobseekerDesc": "Find your dream job and apply",
+    "recruiterDesc": "Post jobs and find talent",
+    "registration": "Registration"
+  },
+  "forms": {
+    "required": "is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid 8-digit phone number",
+    "passwordLength": "Password must be at least 6 characters",
+    "cinLength": "CIN must be at least 6 characters",
+    "uploadResume": "Upload your resume (PDF, DOC, DOCX)",
+    "uploadLogo": "Upload company logo",
+    "companyName": "Company Name",
+    "position": "Your Position",
+    "industry": "Industry",
+    "website": "Company Website (optional)",
+    "cin": "CIN"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "firstNameRequired": "First name is required",
+    "lastNameRequired": "Last name is required",
+    "phoneRequired": "Phone number is required",
+    "cinRequired": "CIN is required",
+    "companyRequired": "Company name is required",
+    "positionRequired": "Your position is required",
+    "industryRequired": "Industry is required",
+    "resumeRequired": "Resume is required"
+  },
+  "app": {
+    "title": "CareerHub",
+    "subtitle": "Find your dream job or perfect candidate",
+    "tagline": "Your AI-powered career companion"
+  },
+  "buttons": {
+    "signingIn": "Signing in...",
+    "registering": "Registering...",
+    "createAccount": "Create  Account",
+    "sendResetLink": "Send Reset Link",
+    "resetPassword": "Reset Password",
+    "resetting": "Resetting...",
+    "sending": "Sending..."
+  },
+  "legal": {
+    "terms": "Terms",
+    "privacyPolicy": "Privacy Policy",
+    "agreement": "By registering, you agree to our"
+  },
+  "footer": {
+    "tagline": "Your AI-powered career companion. Transform your job search with intelligent tools and personalized guidance.",
+    "newsletter": {
+      "title": "Stay Updated",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "disclaimer": "No spam ever. Unsubscribe anytime."
+    },
+    "features": {
+      "title": "Features",
+      "jobSearch": "Job Search",
+      "cvBuilder": "CV Builder",
+      "aiInterview": "AI Interview",
+      "community": "Community",
+      "courses": "Courses"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "careers": "Careers",
+      "press": "Press",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Help Center",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "contact": {
+      "location": "New York, NY"
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookies"
+    },
+    "copyright": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last updated",
+    "headerDescription": "We are committed to protecting your privacy and ensuring transparency about how we handle your data.",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Welcome to CareerBoost. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our platform and tell you about your privacy rights and how the law protects you."
+      },
+      "dataCollection": {
+        "title": "Data We Collect",
+        "personalData": "Personal Data",
+        "identityData": "Identity Data: Name, username, date of birth, gender",
+        "contactData": "Contact Data: Email address, telephone numbers, address",
+        "profileData": "Profile Data: Username and password, interests, preferences",
+        "careerData": "Career Data: Resume/CV, work experience, education, skills",
+        "technicalData": "Technical Data: IP address, browser type, time zone settings"
+      },
+      "dataUsage": {
+        "title": "How We Use Your Data",
+        "serviceDelivery": {
+          "title": "Service Delivery",
+          "description": "To provide and maintain our career services, including job matching and CV analysis."
+        },
+        "personalization": {
+          "title": "Personalization",
+          "description": "To personalize your experience and provide relevant job recommendations."
+        },
+        "communication": {
+          "title": "Communication",
+          "description": "To send important updates about your account and our services."
+        },
+        "analytics": {
+          "title": "Analytics",
+          "description": "To improve our platform and develop new features based on user behavior."
+        }
+      },
+      "dataSharing": {
+        "title": "Data Sharing",
+        "intro": "We do not sell your personal data. We may share your information with:",
+        "employers": "Employers",
+        "employersDesc": "When you apply for jobs through our platform",
+        "serviceProviders": "Service Providers",
+        "serviceProvidersDesc": "Companies that help us operate our platform",
+        "legalRequirements": "Legal Requirements",
+        "legalRequirementsDesc": "When required by law or to protect our rights",
+        "businessTransfers": "Business Transfers",
+        "businessTransfersDesc": "In connection with any merger or acquisition"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorized way. We use encryption, secure servers, and regular security assessments to protect your information."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "access": "Access",
+        "accessDesc": "Request copies of your personal data",
+        "correction": "Correction",
+        "correctionDesc": "Request correction of inaccurate data",
+        "erasure": "Erasure",
+        "erasureDesc": "Request deletion of your personal data",
+        "objection": "Objection",
+        "objectionDesc": "Object to processing of your personal data",
+        "portability": "Portability",
+        "portabilityDesc": "Request transfer of your data to another organization"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "intro": "If you have any questions about this privacy policy or our data practices, please contact us:",
+        "email": "Email",
+        "address": "Address",
+        "phone": "Phone"
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the 'Last Updated' date."
+      }
+    }
+  },
+  "onboarding": {
+    "skip": "Skip",
+    "back": "Back",
+    "continue": "Continue",
+    "getStarted": "Get Started",
+    "swipeHint": "Swipe left/right or use buttons to navigate",
+    "swipeHintMobile": "Swipe to navigate →",
+    "swipeBack": "Swipe back",
+    "swipeNext": "Swipe next",
+    "steps": {
+      "aiCVEnhancer": "AI-Powered CV Enhancement",
+      "aiCVEnhancerDesc": "Transform your resume with our intelligent CV analyzer. Get personalized suggestions to stand out to employers and pass ATS systems with flying colors.",
+      "jobMatcher": "Smart Job Matching",
+      "jobMatcherDesc": "Discover perfect job opportunities tailored to your skills and aspirations. Our AI analyzes your CV to match you with ideal positions.",
+      "aiInterview": "AI Interview Coach",
+      "aiInterviewDesc": "Practice with our intelligent interview simulator. Get real-time feedback on your answers, communication style, and body language.",
+      "careerCompanion": "Your Career Companion",
+      "careerCompanionDesc": "Join a community of professionals and get personalized career guidance. Your success journey starts here.",
+      "readyStart": "Ready to Boost Your Career?",
+      "readyStartDesc": "You're all set! Start your journey towards career excellence with our AI-powered tools and community support."
+    },
+    "tags": {
+      "aiCVEnhancerTag1": "ATS Optimized",
+      "aiCVEnhancerTag2": "AI Analysis",
+      "aiCVEnhancerTag3": "Professional Templates",
+      "jobMatcherTag1": "Smart Matching",
+      "jobMatcherTag2": "Personalized Jobs",
+      "jobMatcherTag3": "Career Fit Score",
+      "aiInterviewTag1": "Real-time Feedback",
+      "aiInterviewTag2": "Mock Interviews",
+      "aiInterviewTag3": "AI Coach",
+      "careerCompanionTag1": "Expert Community",
+      "careerCompanionTag2": "Career Guidance",
+      "careerCompanionTag3": "Networking",
+      "readyStartTag1": "AI Powered",
+      "readyStartTag2": "Career Growth",
+      "readyStartTag3": "Success Ready"
+    }
+  },
+  "splash": {
+    "ariaLabel": "Application is loading",
+    "logoAlt": "CareerBoost Logo",
+    "progressLabel": "Loading progress",
+    "loading": "Loading...",
+    "status": {
+      "initializing": "Initializing...",
+      "loading": "Loading resources...",
+      "almostReady": "Almost ready...",
+      "finalizing": "Finalizing..."
+    }
+  },
+  "install": {
+    "ios": {
+      "title": "Install the App",
+      "description": "To install this app on your iPhone/iPad:",
+      "step1": "Tap the Share button in Safari",
+      "step2": "Select Add to Home Screen",
+      "step3": "Confirm by tapping Add"
+    },
+    "android": {
+      "title": "Add to Home Screen",
+      "description": "Install our app for the best experience and quick access from your home screen."
+    },
+    "buttons": {
+      "install": "Install",
+      "cancel": "Cancel",
+      "close": "Close"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Oops! It looks like the page you're looking for has been moved, deleted, or doesn't exist.",
+    "buttons": {
+      "home": "Back to Homepage",
+      "back": "Go Back"
+    },
+    "help": {
+      "title": "Need help?",
+      "checkUrl": "Check the URL",
+      "contactSupport": "Contact support"
+    }
+  },
+  "giscus": {
+    "title": "Community Discussions",
+    "subtitle": "Powered by GitHub Discussions",
+    "comments": "Comments",
+    "about": "About",
+    "guidelines": "Guidelines",
+    "poweredBy": "Powered by GitHub",
+    "communityDriven": "Community Driven",
+    "howItWorks": "How it Works",
+    "githubRequired": "GitHub Account Required",
+    "publicDiscussions": "Public Discussions",
+    "reactions": "Reactions & Engagement",
+    "beRespectful": "Be Respectful",
+    "stayOnTopic": "Stay On Topic",
+    "noSpam": "No Spam",
+    "constructiveFeedback": "Constructive Feedback",
+    "reportIssue": "Report Issue",
+    "joinDiscussion": "Join Discussion",
+    "allDiscussions": "All Discussions",
+    "startDiscussion": "Start Discussion"
+  },
+  "loading": {
+    "title": "Preparing your experience...",
+    "ariaLabel": "Loading content",
+    "verifyingToken": "Verifying reset token..."
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "menu": "Main Menu",
+    "profile": "Profile",
+    "logout": "Logout",
+    "quickStats": "Quick Stats",
+    "profileCompletion": "Profile Completion",
+    "jobsApplied": "Jobs Applied",
+    "interviews": "Interviews",
+    "enhanceCV": "Enhance CV",
+    "enhanceCVDesc": "Optimize your resume with AI",
+    "jobMatcher": "Job Matcher",
+    "jobMatcherDesc": "Find your perfect job match",
+    "interviewAI": "AI Video Interview",
+    "interviewAIDesc": "Practice with AI-powered interviews",
+    "uploadCV": "Upload Your CV",
+    "uploadCVDesc": "Upload your current resume for AI analysis and enhancement",
+    "uploadFile": "Upload File",
+    "aiAnalysis": "AI Analysis",
+    "aiAnalysisDesc": "Get personalized suggestions to improve your CV",
+    "analyzeNow": "Analyze Now",
+    "findJobs": "Find Your Dream Job",
+    "findJobsDesc": "Discover jobs that match your skills and preferences",
+    "browseJobs": "Browse Jobs",
+    "setPreferences": "Set Preferences",
+    "practiceInterview": "Practice Interview",
+    "practiceInterviewDesc": "Prepare for real interviews with our AI video platform",
+    "startPractice": "Start Practice",
+    "viewHistory": "View History",
+    "online": "Online",
+    "viewProfile": "View Profile",
+    "mainMenu": "Main Menu",
+    "quickAccess": "Quick Access",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "more": "More"
+  }
+}
