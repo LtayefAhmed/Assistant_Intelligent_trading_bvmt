@@ -13,6 +13,6 @@ echo Installing dependencies...
 pip install -r requirements.txt
 
 echo Starting Backend Server...
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 
 pause

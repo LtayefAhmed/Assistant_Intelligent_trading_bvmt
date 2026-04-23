@@ -2,9 +2,12 @@ import pandas as pd
 import os
 import glob
 from typing import List, Optional
+from pathlib import Path
+
+DEFAULT_DATA_DIR = str(Path(__file__).resolve().parent.parent.parent.parent / "data")
 
 class DataLoader:
-    def __init__(self, data_dir: str = "c:/Assistant_Intelligent_trading_bvmt/data"):
+    def __init__(self, data_dir: str = DEFAULT_DATA_DIR):
         self.data_dir = data_dir
         self.data = pd.DataFrame()
         self._load_data()

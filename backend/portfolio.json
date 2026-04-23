@@ -1,5 +1,16 @@
 {
-    "holdings": {},
+    "holdings": {
+        "TN0007620065": {
+            "quantity": 7,
+            "total_cost": 13.09,
+            "avg_cost": 1.8699999999999999
+        },
+        "TN0001100304": {
+            "quantity": 5,
+            "total_cost": 336.04999999999995,
+            "avg_cost": 67.21
+        }
+    },
     "transactions": [
         {
             "type": "BUY",
@@ -397,6 +408,47 @@
             "date": "2026-02-08T07:35:13.357513",
             "total": 3.74,
             "realized_pl": 0.0
+        },
+        {
+            "type": "BUY",
+            "symbol": "TN0007620065",
+            "quantity": 1,
+            "price": 1.87,
+            "date": "2026-02-08T09:35:39.959477",
+            "total": 1.87
+        },
+        {
+            "type": "SELL",
+            "symbol": "TN0007620065",
+            "quantity": 1,
+            "price": 1.87,
+            "date": "2026-02-08T09:35:50.092868",
+            "total": 1.87,
+            "realized_pl": 0.0
+        },
+        {
+            "type": "BUY",
+            "symbol": "TN0007620065",
+            "quantity": 1,
+            "price": 1.87,
+            "date": "2026-02-21T16:46:08.684263",
+            "total": 1.87
+        },
+        {
+            "type": "BUY",
+            "symbol": "TN0007620065",
+            "quantity": 6,
+            "price": 1.87,
+            "date": "2026-02-21T16:46:13.963951",
+            "total": 11.22
+        },
+        {
+            "type": "BUY",
+            "symbol": "TN0001100304",
+            "quantity": 5,
+            "price": 67.21,
+            "date": "2026-02-21T16:46:48.249741",
+            "total": 336.04999999999995
         }
     ]
 }

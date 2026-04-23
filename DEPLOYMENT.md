@@ -57,7 +57,7 @@
     The application will be accessible at `http://localhost:3000` (or similar port shown in terminal).
 
 ## 3. Data Setup
-Ensure your `data` folder is at the project root (`c:/Assistant_Intelligent_trading_bvmt/data`) and contains the `histo_cotation_YYYY.txt` or `.csv` files.
+Ensure your `data` folder is at the project root (`Assistant_Intelligent_trading_bvmt/data`) and contains the `histo_cotation_YYYY.txt` or `.csv` files.
 
 ## 4. Running the Full Application
 For convenience, you can verify everything is running by visiting the Dashboard at the frontend URL. The "Market Overview" should populate with data immediately.
